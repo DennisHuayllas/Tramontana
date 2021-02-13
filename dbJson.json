@@ -1,0 +1,95 @@
+{
+  "usuarios": [
+    {
+      "clave": "1234",
+      "nombre": "profesor",
+      "password": "MTIzNA==",
+      "email": "sa@sa.es",
+      "id": 1
+    },
+    {
+      "clave": "4321",
+      "nombre": "solemio",
+      "password": "MTIzNA==",
+      "email": "sas@sa",
+      "id": 2
+    },
+    {
+      "clave": "1234321",
+      "nombre": "lolo",
+      "password": "MTIzNA==",
+      "email": "sa@sa",
+      "id": 3
+    },
+    {
+      "clave": "332211",
+      "nombre": "Profesor",
+      "password": "MTIzNA==",
+      "email": "sa@sa.es",
+      "id": 4
+    },
+    {
+      "clave": "8888",
+      "nombre": "prueba",
+      "password": "cGFwYXBhcGFw",
+      "email": "sa@sa",
+      "id": 5
+    },
+    {
+      "clave": "23903507",
+      "nombre": "dennis",
+      "password": "MTIzNDU2",
+      "email": "pepw96@gmail.com",
+      "id": 6
+    }
+  ],
+  "pisos": [
+    {
+      "id": 1,
+      "calle": "Luca, 32 -3A",
+      "poblacion": "Alicante",
+      "habitaciones": 3,
+      "aseos": 1,
+      "exterior": true
+    },
+    {
+      "id": 2,
+      "calle": "Almadraba, 2 - 3D",
+      "poblacion": "San Vicente",
+      "habitaciones": 4,
+      "aseos": 2,
+      "exterior": false
+    },
+    {
+      "id": 3,
+      "calle": "Conde Lucanor, 3 - 1A",
+      "poblacion": "San Juan",
+      "habitaciones": 6,
+      "aseos": 3,
+      "exterior": true
+    }
+  ],
+  "reservas": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "pisoId": 1,
+      "dias": 12,
+      "mes": "Enero"
+    },
+    {
+      "id": 2,
+      "usuarioId": 1,
+      "pisoId": 3,
+      "dias": 5,
+      "mes": "Febrero"
+    },
+    {
+      "id": 3,
+      "usuarioId": 2,
+      "pisoId": 2,
+      "dias": 5,
+      "mes": "Febrero"
+    }
+  ]
+}
