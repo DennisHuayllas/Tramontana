@@ -1,0 +1,99 @@
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col xl4 md-4">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Encuentranos</h4>
+                            <span>1010 Avenida,San Paulo 54321, Alicante</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl4 md-4">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Llamanos</h4>
+                            <span>9876543210 +34</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl4 md4 ">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Correo</h4>
+                            <span>tramontana@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="row">
+                <div class="col xl4 lg4 ">
+                    <div class="footer-widget-heading">
+                        <h3>Nosotros</h3>
+                    </div>
+                    <div class="footer-widget">
+                        
+                        <div class="footer-text">
+                            <p> Estamos orgullosos de ofrecerle nuestras cómodas y funcionales habitaciones, 
+                                siendo sin duda nuestro principal objetivo como empresa “el servicio al cliente”; 
+                                una de las características esenciales para que usted se sienta como en casa.</p>
+                        </div>
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="logo.png" width="120" height="50" class="img-fluid" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl4 lg4 md6 ">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Paginas de interes</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Reservas</a></li>
+                            <li><a href="#">Alojamientos</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Servicios</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col xl4 lg4 md6">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Reserva</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Reserva nuestras estancias con antelacion para el disfrute de nuestras instalaciones.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Correo electrónico">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col xl6 lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2021,Todos los Términos reservados por Malmaison</a></p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</footer>
