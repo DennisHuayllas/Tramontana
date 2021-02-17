@@ -1,6 +1,7 @@
 if(sessionStorage.getItem('clave')){
             
-    document.querySelector("#btnlogin").style.visibility = 'hidden';
+    document.querySelector("#btnLogin").style.visibility = 'hidden';
+    document.querySelector("#btnRegister").style.visibility = 'hidden';
 }
 
 export const muestraPisos = (piso, reserva) => {

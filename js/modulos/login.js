@@ -5,7 +5,7 @@ const login_f = (dato) => {
     if (dato[0].clave == document.querySelector("#clave").value && dato[0].password == window.btoa(document.querySelector("#password").value)) { 
         sessionStorage.setItem('clave', dato[0].id);
         localStorage.setItem('nombre', dato[0].nombre);
-         window.location='pisos.html';
+         window.location='/';
        // console.log(sessionStorage.getItem('clave'));
        
     }
