@@ -30,7 +30,7 @@ const sacaPisos = (pisos) => {
     pisos.forEach((dato) => muestraPisos(dato));
 }
 const cargaFooter = () => {
-    fetch("../footer.txt")
+    fetch("../footer.html")
       .then((response) => response.text())
       .then((codigo) => {
         document.querySelector("#footer").innerHTML = codigo;

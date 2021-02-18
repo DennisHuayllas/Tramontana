@@ -8,7 +8,7 @@ const sacaPiso = async (reserva) => {
   muestraPisos(piso, reserva);
 };
 const cargaFooter = () => {
-  fetch("../footer.txt")
+  fetch("../footer.html")
     .then((response) => response.text())
     .then((codigo) => {
       document.querySelector("#footer").innerHTML = codigo;

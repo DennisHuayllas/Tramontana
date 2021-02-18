@@ -12,7 +12,7 @@ html {
   nav {
     background-color: transparent !important;
   }
-  bo
+  
   #logo {
     margin-left: 10px;
     font-size: 30px;
@@ -36,7 +36,7 @@ html {
     margin-top: 8px;
   }
   .cta-text {
-    padding-left: 15px;
+   
     display: inline-block;
   }
   .cta-text h4 {
@@ -46,7 +46,7 @@ html {
     margin-bottom: 2px;
   }
   .cta-text span {
-    color: #757575;
+    color: white;
     font-size: 15px;
   }
   .footer-content {
@@ -70,7 +70,7 @@ html {
   .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #7e7e7e;
+    color: white;
     line-height: 28px;
   }
   .footer-social-icon span {
@@ -103,7 +103,7 @@ html {
     background: #dd4b39;
   }
   .footer-widget-heading h3 {
-    color: #fff;
+    color: #EC7960;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -128,7 +128,7 @@ html {
     color: #ff5e14;
   }
   .footer-widget ul li a {
-    color: #878787;
+    color: white;
     text-transform: capitalize;
   }
   .subscribe-form {
@@ -162,7 +162,7 @@ html {
   .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #878787;
+    color: white;
   }
   .copyright-text p a {
     color: #ff5e14;
@@ -176,6 +176,5 @@ html {
   }
   .footer-menu li a {
     font-size: 14px;
-    color: #878787;
+    color:white;
   }
-  
