@@ -17,7 +17,6 @@ const muestraReservas = (reservas) => {
     sacaPiso(reserva);
   });
 };
-
 export const misReservas = () => {
   let clave = sessionStorage.getItem("clave");
   if (clave != null) {
