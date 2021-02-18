@@ -7,7 +7,30 @@ const sacaPiso = async (reserva) => {
 
   muestraPisos(piso, reserva);
 };
-
+const cargaFooter = () => {
+  fetch("../footer.txt")
+    .then((response) => response.text())
+    .then((codigo) => {
+      document.querySelector("#footer").innerHTML = codigo;
+    });
+};
+cargaFooter();
+const cargarMenu=()=> {
+  fetch("../menu.html")
+    .then((response) => response.text())
+    .then((codigo) => {
+      document.querySelector("#menu").innerHTML = codigo;
+    })
+    .then(()=>{
+      if(sessionStorage.getItem('clave')){
+        
+        document.querySelector("#btnLogin").style.visibility = 'hidden';
+        document.querySelector("#btnRegister").style.visibility = 'hidden';
+        document.querySelector("#btnLogOut").addEventListener("click",()=>{sessionStorage.clear()})
+    }
+})
+}
+cargarMenu();
 const muestraReservas = (reservas) => {
 
   if (localStorage.nombre) {
@@ -17,6 +40,7 @@ const muestraReservas = (reservas) => {
     sacaPiso(reserva);
   });
 };
+
 export const misReservas = () => {
   let clave = sessionStorage.getItem("clave");
   if (clave != null) {
