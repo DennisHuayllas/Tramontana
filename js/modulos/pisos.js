@@ -2,12 +2,15 @@ export const muestraPisos = (piso, reserva) => {
     let addPisos = document.querySelector("#pisos");
 
     let salida = `
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Piso en ${piso.poblacion}</span>
-                    <h5>Características:</h5>
-                    <ul>
-                        <li>Calle: ${piso.calle}</li>
+              <div id="hola" class="col s12 m4 xl4 ">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="Img/casa_1.jpg">
+                    <span id="nombre"class="card-title">${piso.poblacion}</span>
+                    <a id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
+                  </div>
+                  <div class="card-content">
+                        <li>Calle:${piso.calle} </li>
                         <li>Nº habitaciones: ${piso.habitaciones}</li>
                         <li>Nº de aseos: ${piso.aseos}</li>
                         <li>${piso.exterior ? 'Exterior' : 'Interior'}</li>
