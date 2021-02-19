@@ -41,6 +41,13 @@
       "password": "MTIzNDU2",
       "email": "pepw96@gmail.com",
       "id": 6
+    },
+    {
+      "clave": "000000000",
+      "nombre": "caca",
+      "password": "MDAwMDAwMDAwMDAwMDAwMDAwMA==",
+      "email": "pepe@gmail.com",
+      "id": 7
     }
   ],
   "pisos": [
