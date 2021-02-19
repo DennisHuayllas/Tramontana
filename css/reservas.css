@@ -178,3 +178,11 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+.card {
+  background-color: transparent;
+}
+#nombre {
+  font-weight: bold;
+  font-family: sans-serif;
+  color: black;
+}
