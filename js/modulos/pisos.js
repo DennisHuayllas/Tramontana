@@ -5,7 +5,7 @@ export const muestraPisos = (piso, reserva) => {
               <div id="hola" class="col s12 m4 xl4 ">
                 <div class="card">
                   <div class="card-image">
-                    <img src="Img/casa_1.jpg">
+                    <img src="${piso.imagen}">
                     <span id="nombre"class="card-title">${piso.poblacion}</span>
                     <a id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
                   </div>
@@ -17,7 +17,9 @@ export const muestraPisos = (piso, reserva) => {
                     </ul>`;
     
             if (reserva) {
-                salida += `<h4>Ha sido reservado ${reserva.dias} dias en el mes de ${reserva.mes}</h4>`;
+                salida += `<div class="chip white">
+                Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
+              </div>`;
             }
     salida +=  `</div>
             </div>`;
@@ -49,9 +51,11 @@ const cargaFooter = () => {
       .then(()=>{
         if(sessionStorage.getItem('clave')){
           
-          document.querySelector("#btnLogin").style.visibility = 'hidden';
-          document.querySelector("#btnRegister").style.visibility = 'hidden';
-          document.querySelector("#btnLogOut").addEventListener("click",()=>{sessionStorage.clear()})
+          document.querySelector("#btnLogin").style.display = "none";
+          document.querySelector("#btnRegister").style.display = "none";
+          document.querySelector("#misReservas").style.display = 'inline';
+          document.querySelector("#LogOut").style.display = 'inline';
+          document.querySelector("#LogOut").addEventListener("click",()=>{sessionStorage.clear()})
       }
   })
  }

@@ -18,7 +18,7 @@ const cargarMenu=()=> {
           
           document.querySelector("#btnLogin").style.visibility = 'hidden';
           document.querySelector("#btnRegister").style.visibility = 'hidden';
-          document.querySelector("#btnLogOut").addEventListener("click",()=>{sessionStorage.clear()})
+          document.querySelector("#LogOut").addEventListener("click",()=>{sessionStorage.clear()})
       }
   })
  }
