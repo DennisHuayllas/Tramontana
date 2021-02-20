@@ -1,13 +1,27 @@
+var user = document.getElementById("user");
+var email = document.getElementById("email");
+var pass1 = document.getElementById("pass1");
+var pass2 = document.getElementById("pass2");
+var codipos = document.getElementById("codipos");
+var sexo = document.getElementsByName("sexo");
+var seleccionado = false;
+var ciudad = document.getElementById("ciudad").selectedIndex;
+var elementoCHECK = document.getElementById("terminos");
+
+var user = document.getElementById("user");
+var email = document.getElementById("email");
+var pass1 = document.getElementById("pass1");
+var pass2 = document.getElementById("pass2");
+var codipos = document.getElementById("codipos");
+var sexo = document.getElementsByName("sexo");
+var seleccionado = false;
+var ciudad = document.getElementById("ciudad").selectedIndex;
+var elementoCHECK = document.getElementById("terminos");
+user.value = sessionStorage.getItem('usuario')
+
+console.log(sessionStorage.getItem('nombre'))
 const validar=()=> {
-	var user = document.getElementById("user");
-	var email = document.getElementById("email");
-	var pass1 = document.getElementById("pass1");
-	var pass2 = document.getElementById("pass2");
-	var codipos = document.getElementById("codipos");
-	var sexo = document.getElementsByName("sexo");
-	var seleccionado = false;
-	var ciudad = document.getElementById("ciudad").selectedIndex;
-	var elementoCHECK = document.getElementById("terminos");
+
 
 	if(user.value.length == 0)
 	{
