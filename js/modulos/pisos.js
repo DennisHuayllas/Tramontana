@@ -17,7 +17,9 @@ export const muestraPisos = (piso, reserva) => {
                     </ul>`;
     
             if (reserva) {
-                salida += `<h4>Ha sido reservado ${reserva.dias} dias en el mes de ${reserva.mes}</h4>`;
+                salida += `<div class="chip teal">
+                Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
+              </div>`;
             }
     salida +=  `</div>
             </div>`;
@@ -53,7 +55,7 @@ const cargaFooter = () => {
           document.querySelector("#btnRegister").style.display = "none";
           document.querySelector("#misReservas").style.display = 'inline';
           document.querySelector("#LogOut").style.display = 'inline';
-          document.querySelector("#btnLogOut").addEventListener("click",()=>{sessionStorage.clear()})
+          document.querySelector("#LogOut").addEventListener("click",()=>{sessionStorage.clear()})
       }
   })
  }
