@@ -1,5 +1,5 @@
 import { enviaLogin } from "./modulos/login.js";
-import { damePisos } from "./modulos/pisos.js";
+import { dameCabañas, damePisos } from "./modulos/pisos.js";
 import { generaAlta } from "./modulos/signup.js";
 import { misReservas } from "./modulos/reservas.js";
 
@@ -48,6 +48,7 @@ if (inicioBoton !== null) {
 // Página pisos, carga los datos de la BD.
 if (pagina.pathname == "/pisos.html") {
   damePisos();
+  dameCabañas();
 }
 
 // Página reservas, carga los datos de la BD.

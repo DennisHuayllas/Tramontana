@@ -57,11 +57,63 @@
       "id": 8
     }
   ],
+  "cabanas": [
+    {
+      "id": 1,
+      "imagen":"img/1.jpg",
+      "Nombre Cabaña": "Waterside Cornwall",
+      "poblacion": "Bodmin",
+      "camas": 2,
+      "aseos":"compartidos"
+    },
+    {
+      "id": 2,
+      "imagen":"img/3.jpg",
+      "Nombre Cabaña": "The Snuggery",
+      "poblacion": "Truro",
+      "camas": 3,
+      "aseos":"compartidos"
+    },
+    {
+      "id": 3,
+      "imagen":"img/5.jpg",
+      "Nombre Cabaña": "The Old Deer House",
+      "poblacion": "Cardinham",
+      "camas": 4,
+      "aseos":"compartidos"
+    }
+    ,
+    {
+      "id": 4,
+      "imagen":"img/5.jpg",
+      "Nombre Cabaña": "The Bothy",
+      "poblacion": "Cornwall",
+      "camas": 2,
+      "aseos":"compartidos"
+    }
+    ,
+    {
+      "id": 5,
+      "imagen":"img/5.jpg",
+      "Nombre Cabaña": "Truly Paradise Cottage",
+      "poblacion": "Golant",
+      "camas": 2,
+      "aseos":"compartidos"
+    }
+    ,
+    {
+      "id": 6,
+      "imagen":"img/4.jpg",
+      "Nombre Cabaña": "Tregolls",
+      "poblacion": "Wadebridge",
+      "camas": 3,
+      "aseos":"compartidos"
+    }
+  ],
   "pisos": [
     {
       "id": 1,
-      "imagen":"img/fondo.png",
-      "calle": "Luca, 32 -3A",
+      "imagen":"img/1.jpg",
       "poblacion": "Alicante",
       "habitaciones": 3,
       "aseos": 1,
@@ -69,8 +121,7 @@
     },
     {
       "id": 2,
-      "imagen":"img/casa_1.jpg",
-      "calle": "Almadraba, 2 - 3D",
+      "imagen":"img/2.jpg",
       "poblacion": "San Vicente",
       "habitaciones": 4,
       "aseos": 2,
@@ -78,11 +129,34 @@
     },
     {
       "id": 3,
-      "imagen":"img/casa_1.jpg",
-      "calle": "Conde Lucanor, 3 - 1A",
+      "imagen":"img/3.jpg",
       "poblacion": "San Juan",
       "habitaciones": 6,
       "aseos": 3,
+      "exterior": true
+    },
+    {
+      "id": 4,
+      "imagen":"img/4.jpg",
+      "poblacion": "Elxe",
+      "habitaciones": 3,
+      "aseos": 3,
+      "exterior": false
+    },
+    {
+      "id": 5,
+      "imagen":"img/5.jpg",
+      "poblacion": "Alicante",
+      "habitaciones": 2,
+      "aseos": 2,
+      "exterior": true
+    },
+    {
+      "id": 6,
+      "imagen":"img/6.jpg",
+      "poblacion": "Alicante",
+      "habitaciones": 3,
+      "aseos": 1,
       "exterior": true
     }
   ],
