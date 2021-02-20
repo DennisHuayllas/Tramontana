@@ -5,7 +5,7 @@ export const muestraPisos = (piso, reserva) => {
               <div id="hola" class="col s12 m4 xl4 ">
                 <div class="card">
                   <div class="card-image">
-                    <img src="Img/casa_1.jpg">
+                    <img src="${piso.imagen}">
                     <span id="nombre"class="card-title">${piso.poblacion}</span>
                     <a id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
                   </div>
@@ -17,7 +17,7 @@ export const muestraPisos = (piso, reserva) => {
                     </ul>`;
     
             if (reserva) {
-                salida += `<div class="chip teal">
+                salida += `<div class="chip white">
                 Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
               </div>`;
             }

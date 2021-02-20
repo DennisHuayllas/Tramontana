@@ -60,6 +60,7 @@
   "pisos": [
     {
       "id": 1,
+      "imagen":"img/fondo.png",
       "calle": "Luca, 32 -3A",
       "poblacion": "Alicante",
       "habitaciones": 3,
@@ -68,6 +69,7 @@
     },
     {
       "id": 2,
+      "imagen":"img/casa_1.jpg",
       "calle": "Almadraba, 2 - 3D",
       "poblacion": "San Vicente",
       "habitaciones": 4,
@@ -76,6 +78,7 @@
     },
     {
       "id": 3,
+      "imagen":"img/casa_1.jpg",
       "calle": "Conde Lucanor, 3 - 1A",
       "poblacion": "San Juan",
       "habitaciones": 6,
