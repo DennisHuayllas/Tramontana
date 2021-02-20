@@ -7,7 +7,7 @@ export const muestraPisos = (piso, reserva) => {
                   <div class="card-image">
                     <img src="${piso.imagen}">
                     <span id="nombre"class="card-title">${piso.poblacion}</span>
-                    <a id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
+                    <a href="/formulario?=${piso.id}" id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
                   </div>
                   <div class="card-content">
                         <li>Calle:${piso.calle} </li>
