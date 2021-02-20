@@ -17,6 +17,8 @@ const cargaFooter = () => {
         if(sessionStorage.getItem('clave')){
           document.querySelector("#btnLogin").style.visibility = 'hidden';
           document.querySelector("#btnRegister").style.visibility = 'hidden';
+          document.querySelector("#misReservas").style.display = 'inline';
+          document.querySelector("#LogOut").style.display = 'inline';
           document.querySelector("#btnLogOut").addEventListener("click",()=>{sessionStorage.clear()})
       }
   })
