@@ -48,6 +48,13 @@
       "password": "MDAwMDAwMDAwMDAwMDAwMDAwMA==",
       "email": "pepe@gmail.com",
       "id": 7
+    },
+    {
+      "clave": "123456",
+      "nombre": "Abel",
+      "password": "MTIzNDU2",
+      "email": "aaa@gmail.com",
+      "id": 8
     }
   ],
   "pisos": [
