@@ -171,6 +171,62 @@
       "exterior": true
     }
   ],
+  "servicios": [
+    {
+      "id": 1,
+      "imagen":"img/s1.jpg",
+      "poblacion": "Alicante",
+      "habitaciones": 3,
+      "aseos": 1,
+      "exterior": true,
+      "precio":"49.99"
+    },
+    {
+      "id": 2,
+      "imagen":"img/2.jpg",
+      "poblacion": "San Vicente",
+      "habitaciones": 4,
+      "aseos": 2,
+      "precio":"54.99",
+      "exterior": false
+    },
+    {
+      "id": 3,
+      "imagen":"img/3.jpg",
+      "poblacion": "San Juan",
+      "habitaciones": 6,
+      "aseos": 3,
+      "precio":"59.99",
+      "exterior": true
+    },
+    {
+      "id": 4,
+      "imagen":"img/4.jpg",
+      "poblacion": "Elxe",
+      "habitaciones": 3,
+      "precio":"29.99",
+      "aseos": 3,
+      "exterior": false
+    },
+    {
+      "id": 5,
+      "imagen":"img/5.jpg",
+      "poblacion": "Alicante",
+      "habitaciones": 2,
+      "aseos": 2,
+      "precio":"49.99",
+      "exterior": true
+    },
+    {
+      "id": 6,
+      "imagen":"img/6.jpg",
+      "poblacion": "Alicante",
+      "habitaciones": 3,
+      "precio":"64.99",
+      "aseos": 1,
+      "exterior": true
+    }
+  ],
   "reservas": [
     {
       "id": 1,
