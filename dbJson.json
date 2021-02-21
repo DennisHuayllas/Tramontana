@@ -148,7 +148,7 @@
       "imagen":"img/4.jpg",
       "poblacion": "Elxe",
       "habitaciones": 3,
-      "precio":"29.99",
+      "precio":"29.99€",
       "aseos": 3,
       "exterior": false
     },
@@ -169,6 +169,51 @@
       "precio":"64.99",
       "aseos": 1,
       "exterior": true
+    }
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "imagen":"img/s1.jpg",
+      "tipo": "Desayuno",
+      "precio":"7.99 €/Persona",
+      "duracion":"sin limite"
+    },
+    {
+      "id": 2,
+      "imagen":"img/s2.jpg",
+      "tipo": "Masaje Balines",
+      "precio":"54.99 €/Hora",
+      "duracion":"1 hora"
+    },
+    {
+      "id": 3,
+      "imagen":"img/s3.jpg",
+      "tipo": "Senderismo-Guiado",
+      "precio":"14.99 €/Ruta",
+      "duracion":"4 horas"
+    },
+    {
+      "id": 4,
+      "imagen":"img/s4.jpg",
+      "tipo": "Alquiler De Bicicletas",
+      "precio":"5.99 €/Dia",
+      "duracion":"sin limite"
+    },
+    {
+      "id": 5,
+      "imagen":"img/s5.jpg",
+      "tipo": "Yoga en la naturaleza",
+      "precio":"9.99 €/Persona",
+      "duracion":"sin limite"
+    },
+    {
+      "id": 6,
+      "imagen":"img/s6.jpg",
+      "tipo": "Tirolina",
+      "precio":"1.99 €/Salto",
+      "duracion":"sin limite"
+
     }
   ],
   "reservas": [
