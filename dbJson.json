@@ -60,52 +60,57 @@
   "cabanas": [
     {
       "id": 1,
-      "imagen":"img/1.jpg",
-      "Nombre Cabaña": "Waterside Cornwall",
+      "imagen":"img/C3.jpg",
+      "nombre": "Waterside Cornwall",
       "poblacion": "Bodmin",
+      "precio":"39.99",
       "camas": 2,
       "aseos":"compartidos"
     },
     {
       "id": 2,
-      "imagen":"img/3.jpg",
-      "Nombre Cabaña": "The Snuggery",
+      "imagen":"img/C2.jpg",
+      "nombre": "The Snuggery",
       "poblacion": "Truro",
+      "precio":"59.99",
       "camas": 3,
       "aseos":"compartidos"
     },
     {
       "id": 3,
-      "imagen":"img/5.jpg",
-      "Nombre Cabaña": "The Old Deer House",
+      "imagen":"img/C1.jpg",
+      "nombre": "The Old Deer House",
       "poblacion": "Cardinham",
+      "precio":"49.99",
       "camas": 4,
       "aseos":"compartidos"
-    }
-    ,
+    },
     {
       "id": 4,
-      "imagen":"img/5.jpg",
-      "Nombre Cabaña": "The Bothy",
+      "imagen":"img/C4.jpg",
+      "nombre": "The Bothy",
       "poblacion": "Cornwall",
+      "precio":"79.99",
       "camas": 2,
       "aseos":"compartidos"
     }
     ,
     {
       "id": 5,
-      "imagen":"img/5.jpg",
-      "Nombre Cabaña": "Truly Paradise Cottage",
+      "imagen":"img/C5.jpg",
+      "nombre": "Truly Paradise Cottage",
       "poblacion": "Golant",
+      "precio":"59.99",
       "camas": 2,
       "aseos":"compartidos"
     }
     ,
     {
       "id": 6,
-      "imagen":"img/4.jpg",
-      "Nombre Cabaña": "Tregolls",
+      "imagen":"img/C6.jpg",
+      "nombre": "Tregolls",
       "poblacion": "Wadebridge",
+      "precio":"89.99",
       "camas": 3,
       "aseos":"compartidos"
     }
@@ -117,7 +122,8 @@
       "poblacion": "Alicante",
       "habitaciones": 3,
       "aseos": 1,
-      "exterior": true
+      "exterior": true,
+      "precio":"49.99"
     },
     {
       "id": 2,
@@ -125,6 +131,7 @@
       "poblacion": "San Vicente",
       "habitaciones": 4,
       "aseos": 2,
+      "precio":"54.99",
       "exterior": false
     },
     {
@@ -133,6 +140,7 @@
       "poblacion": "San Juan",
       "habitaciones": 6,
       "aseos": 3,
+      "precio":"59.99",
       "exterior": true
     },
     {
@@ -140,6 +148,7 @@
       "imagen":"img/4.jpg",
       "poblacion": "Elxe",
       "habitaciones": 3,
+      "precio":"29.99",
       "aseos": 3,
       "exterior": false
     },
@@ -149,6 +158,7 @@
       "poblacion": "Alicante",
       "habitaciones": 2,
       "aseos": 2,
+      "precio":"49.99",
       "exterior": true
     },
     {
@@ -156,6 +166,7 @@
       "imagen":"img/6.jpg",
       "poblacion": "Alicante",
       "habitaciones": 3,
+      "precio":"64.99",
       "aseos": 1,
       "exterior": true
     }

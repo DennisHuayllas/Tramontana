@@ -10,10 +10,11 @@ export const muestraPisos = (piso, reserva) => {
                   </div>
                   <div class="card-content" style="background-color:white">
                         <span id="nombre"class="card-title">${piso.poblacion}</span>
-                        <li>Calle:${piso.calle} </li>
                         <li>Nº habitaciones: ${piso.habitaciones}</li>
                         <li>Nº de aseos: ${piso.aseos}</li>
                         <li>${piso.exterior ? 'Exterior' : 'Interior'}</li>
+                        <br>
+                        <p id="nombre"class="card-title">${piso.precio}€/Noche</p>
                     </ul>`;
     
             if (reserva) {
@@ -29,9 +30,10 @@ export const muestraPisos = (piso, reserva) => {
     e.innerHTML = salida;
 
     addPisos.appendChild(e);
+ 
 }
-export const muestraCabañas = (cabana, reserva) => {
-  let addPisos = document.querySelector("#cabana");
+const muestraCabañas = (cabana, reserva) => {
+  let addCabanas = document.querySelector("#cabanas");
 
   let salida = `
             <div id="hola" class="col s12 m4 xl4 ">
@@ -42,9 +44,11 @@ export const muestraCabañas = (cabana, reserva) => {
                 </div>
                 <div class="card-content" style="background-color:white">
                       <span id="nombre"class="card-title">${cabana.nombre}</span>
-                      <li>Calle:${cabana.poblacion} </li>
-                      <li>Nº habitaciones: ${cabana.habitaciones}</li>
+                      <li>Localidad: ${cabana.poblacion} </li>
+                      <li>Nº Camas: ${cabana.camas}</li>
                       <li>Nº de aseos: ${cabana.aseos}</li>
+                      <br>
+                      <p id="nombre"class="card-title">${cabana.precio}€/Noche</p>
                   </ul>`;
           if (reserva) {
               salida += `<div class="chip white">
@@ -58,11 +62,15 @@ export const muestraCabañas = (cabana, reserva) => {
   let e = document.createElement("div");
   e.innerHTML = salida;
 
-  addPisos.appendChild(e);
+  addCabanas.appendChild(e);
+
 }
 
 const sacaPisos = (pisos) => {
     pisos.forEach((dato) => muestraPisos(dato));
+}
+const sacaCabañas = (cabana) => {
+  cabana.forEach((dato) => muestraCabañas(dato));
 }
 const cargaFooter = () => {
     fetch("../footer.html")
@@ -100,16 +108,16 @@ export const damePisos = () => {
     .catch( error => {
         M.toast({html: "No se puede obtener pisos.",classes:"red"});
     });
+  
 }
-const sacaCabañas = (cabanas) => {
-  cabanas.forEach((cabanas) => muestraCabañas(cabanas));
-}
-export const dameCabañas = () => {
+
+const dameCabañas = () => {
     
   fetch("http://localhost:3000/cabanas")
   .then(respuesta => respuesta.json())
   .then(datos => sacaCabañas(datos))
   .catch( error => {
-      M.toast({html: "No se puede obtener pisos.",classes:"red"});
+      M.toast({html: "No se puede obetener cabañas.",classes:"red"});
   });
 }
+dameCabañas();
