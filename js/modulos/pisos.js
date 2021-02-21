@@ -66,11 +66,45 @@ const muestraCabañas = (cabana, reserva) => {
 
 }
 
+const muestraServicios = (servicio, reserva) => {
+  let addServicio = document.querySelector("#servicios");
+
+  let salida = `
+            <div id="hola" class="col s12 m4 xl4 ">
+              <div class="card">
+                <div class="card-image">
+                  <img src="${servicio.imagen}">  
+                  <a id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
+                </div>
+                <div class="card-content" style="background-color:white">
+                      <span id="nombre"class="card-title">${servicio.tipo}</span>
+                      <li>Duracion: ${servicio.duracion} </li>
+                      <br>
+                      <p id="nombre"class="card-title">${servicio.precio}</p>
+                  </ul>`;
+          if (reserva) {
+              salida += `<div class="chip white">
+              Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
+            </div>`;
+          }
+  salida +=  `</div>
+          </div>`;
+
+
+  let e = document.createElement("div");
+  e.innerHTML = salida;
+
+  addServicio.appendChild(e);
+
+}
 const sacaPisos = (pisos) => {
     pisos.forEach((dato) => muestraPisos(dato));
 }
 const sacaCabañas = (cabana) => {
   cabana.forEach((dato) => muestraCabañas(dato));
+}
+const sacaServicios = (servicios) => {
+  servicios.forEach((dato) => muestraServicios(dato));
 }
 const cargaFooter = () => {
     fetch("../footer.html")
@@ -121,3 +155,14 @@ const dameCabañas = () => {
   });
 }
 dameCabañas();
+
+const dameServicios = () => {
+    
+  fetch("http://localhost:3000/servicios")
+  .then(respuesta => respuesta.json())
+  .then(datos => sacaServicios(datos))
+  .catch( error => {
+      M.toast({html: "No se puede obetener cabañas.",classes:"red"});
+  });
+}
+dameServicios();
