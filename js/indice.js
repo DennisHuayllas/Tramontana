@@ -1,5 +1,5 @@
 import { enviaLogin } from "./modulos/login.js";
-import { damePisos } from "./modulos/pisos.js";
+import {damePisos } from "./modulos/pisos.js";
 import { generaAlta } from "./modulos/signup.js";
 import { misReservas } from "./modulos/reservas.js";
 
