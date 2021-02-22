@@ -1,6 +1,7 @@
 let map;
 
 function initMap(){
+  
     map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 42.442510402403634,  lng: -2.411543555005104},
     zoom: 13
@@ -8,9 +9,12 @@ function initMap(){
     var marker = new google.maps.Marker({
         position: {lat: 42.442510402403634, lng: -2.411543555005104},
         map: map,
+        animation:google.maps.Animation.BOUNCE,
         title: 'Complejo Hotelero Tramontana'
       });
+
 }
+
 const cargaFooter = () => {
   fetch("../footer.html")
     .then((response) => response.text())
