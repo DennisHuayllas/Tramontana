@@ -55,6 +55,76 @@
       "password": "MTIzNDU2",
       "email": "aaa@gmail.com",
       "id": 8
+    },
+    {
+      "clave": "12345",
+      "nombre": "asd",
+      "password": "cXFxcXFxcXFxcXE=",
+      "email": "pepe@gmail.com",
+      "id": 9
+    },
+    {
+      "clave": "765432",
+      "nombre": "Adidas",
+      "password": "MTExMTExMTExMTExMTExMTEx",
+      "email": "pepw96@gmail.com",
+      "id": 10
+    },
+    {
+      "clave": "765432",
+      "nombre": "asd",
+      "password": "cXFxcXFxcXFxcXFxcXFxcXFxcQ==",
+      "email": "pepw96@gmail.com",
+      "id": 11
+    },
+    {
+      "clave": "765432",
+      "nombre": "Adidas",
+      "password": "cXFxcXFxcXFxcXFxcXFxcXFxcQ==",
+      "email": "pepw96@gmail.com",
+      "id": 12
+    },
+    {
+      "clave": "12345",
+      "nombre": "Adidas",
+      "password": "cXFxcXFxcXFxcXFxcXFxcXFx",
+      "email": "pepw96@gmail.com",
+      "id": 13
+    },
+    {
+      "clave": "765432",
+      "nombre": "Adidas",
+      "password": "cXFxcXFxcXFxcXFxcXE=",
+      "email": "pepw96@gmail.com",
+      "id": 14
+    },
+    {
+      "clave": "12345",
+      "nombre": "llllllll",
+      "password": "cHBwcHBwcHBwcHBwcHBwcHBwcA==",
+      "email": "pepw96@gmail.com",
+      "id": 15
+    },
+    {
+      "clave": "765432",
+      "nombre": "q",
+      "password": "ZWVlZWVlZWVlZWVlZQ==",
+      "email": "pw96@gmail.com",
+      "id": 16
+    },
+    {
+      "clave": "12345",
+      "nombre": "Adidas",
+      "password": "eHFxcXFxcXFxcXFxcXFxcXFxcQ==",
+      "email": "hola@hotmail.com",
+      "id": 17
+    },
+    {
+      "clave": "765432",
+      "nombre": "Camisa Nike2",
+      "password": "eHh4eHh4eHh4eHh4eHh4eHh4eA==",
+      "email": "hoala@hotmail.com",
+      "id": 18
     }
   ],
   "cabanas": [
