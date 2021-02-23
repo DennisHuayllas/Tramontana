@@ -1,5 +1,5 @@
 import { enviaLogin } from "./modulos/login.js";
-import {damePisos } from "./modulos/pisos.js";
+import { damePisos, dameCabañas, dameServicios } from "./modulos/pisos.js";
 import { generaAlta } from "./modulos/signup.js";
 import { misReservas } from "./modulos/reservas.js";
 
@@ -10,6 +10,7 @@ let altaUsuario = document.querySelector("#signup-boton");
 
 // Para detectar que estamos en la página de "pisos"
 let pagina = window.location;
+
 
 ////////////////////////
 // CABECERAS DE FETCH //
@@ -46,14 +47,21 @@ if (inicioBoton !== null) {
 }
 
 // Página pisos, carga los datos de la BD.
-if (pagina.pathname == "/pisos.html") {
-  damePisos();
+if (pagina.pathname == "/pisos") {
+
+  damePisos()
+  dameCabañas()
+  dameServicios()
+
 }
 
 // Página reservas, carga los datos de la BD.
-if (pagina.pathname == "/reservas.html") {
-  misReservas();
+if (pagina.pathname == "/reservas" || pagina.pathname == '/reservas.html') {
+
+  if (sessionStorage.getItem('clave') != null) misReservas()
+  else window.location = '/login'
 }
+
 
 // Alta usuario página signup
 if (altaUsuario !== null) {
@@ -67,3 +75,4 @@ if (altaUsuario !== null) {
     generaAlta(dato);
   });
 }
+

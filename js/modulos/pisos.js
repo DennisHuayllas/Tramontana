@@ -1,7 +1,7 @@
 export const muestraPisos = (piso, reserva) => {
-    let addPisos = document.querySelector("#pisos");
+  let addPisos = document.querySelector("#pisos");
 
-    let salida = `
+  let salida = `
               <div id="hola" class="col s12 m4 xl4 ">
                 <div class="card">
                   <div class="card-image">
@@ -16,31 +16,32 @@ export const muestraPisos = (piso, reserva) => {
                         <br>
                         <p id="nombre"class="card-title">${piso.precio}€/Noche</p>
                     </ul>`;
-    
-            if (reserva) {
-                salida += `<div class="chip white">
-                Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
+
+  if (reserva) {
+
+    salida += `<div class="chip white">
+                Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
               </div>`;
-            }
-    salida +=  `</div>
+  }
+  salida += `</div>
             </div>`;
 
 
-    let e = document.createElement("div");
-    e.innerHTML = salida;
+  let e = document.createElement("div");
+  e.innerHTML = salida;
 
-    addPisos.appendChild(e);
- 
+  addPisos.appendChild(e);
+
 }
-const muestraCabañas = (cabana, reserva) => {
-  let addCabanas = document.querySelector("#cabanas");
+export const muestraCabañas = (cabana, reserva) => {
+  let addCabanas = document.querySelector("#cabanas")
 
   let salida = `
             <div id="hola" class="col s12 m4 xl4 ">
               <div class="card">
                 <div class="card-image">
                   <img src="${cabana.imagen}">  
-                  <a href="/formulario?tipo=cabana&id= ${cabana.id}" id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
+                  <a href="/formulario?tipo=cabana&id=${cabana.id}" id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
                 </div>
                 <div class="card-content" style="background-color:white">
                       <span id="nombre"class="card-title">${cabana.nombre}</span>
@@ -50,12 +51,13 @@ const muestraCabañas = (cabana, reserva) => {
                       <br>
                       <p id="nombre"class="card-title">${cabana.precio}€/Noche</p>
                   </ul>`;
-          if (reserva) {
-              salida += `<div class="chip white">
-              Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
+  if (reserva) {
+
+    salida += `<div class="chip white">
+              Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
             </div>`;
-          }
-  salida +=  `</div>
+  }
+  salida += `</div>
           </div>`;
 
 
@@ -66,7 +68,7 @@ const muestraCabañas = (cabana, reserva) => {
 
 }
 
-const muestraServicios = (servicio, reserva) => {
+export const muestraServicios = (servicio, reserva) => {
   let addServicio = document.querySelector("#servicios");
 
   let salida = `
@@ -74,7 +76,7 @@ const muestraServicios = (servicio, reserva) => {
               <div class="card">
                 <div class="card-image">
                   <img src="${servicio.imagen}">  
-                  <a href="/formulario?tipo=servicio&id= ${servicio.id}" id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
+                  <a href="/formulario?tipo=servicio&id=${servicio.id}" id="alquilar"class="btn-floating halfway-fab pulse waves-effect waves-light red"><i class="material-icons">local_grocery_store</i></a>
                 </div>
                 <div class="card-content" style="background-color:white">
                       <span id="nombre"class="card-title">${servicio.tipo}</span>
@@ -82,12 +84,14 @@ const muestraServicios = (servicio, reserva) => {
                       <br>
                       <p id="nombre"class="card-title">${servicio.precio}</p>
                   </ul>`;
-          if (reserva) {
-              salida += `<div class="chip white">
-              Ha sido reservado${reserva.dias} dias en el mes de ${reserva.mes}
+  if (reserva) {
+
+
+    salida += `<div class="chip white">
+              Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
             </div>`;
-          }
-  salida +=  `</div>
+  }
+  salida += `</div>
           </div>`;
 
 
@@ -98,7 +102,7 @@ const muestraServicios = (servicio, reserva) => {
 
 }
 const sacaPisos = (pisos) => {
-    pisos.forEach((dato) => muestraPisos(dato));
+  pisos.forEach((dato) => muestraPisos(dato));
 }
 const sacaCabañas = (cabana) => {
   cabana.forEach((dato) => muestraCabañas(dato));
@@ -106,63 +110,35 @@ const sacaCabañas = (cabana) => {
 const sacaServicios = (servicios) => {
   servicios.forEach((dato) => muestraServicios(dato));
 }
-const cargaFooter = () => {
-    fetch("../footer.html")
-      .then((response) => response.text())
-      .then((codigo) => {
-        document.querySelector("#footer").innerHTML = codigo;
-      });
-  };
-  cargaFooter();
-  const cargarMenu=()=> {
-    fetch("../menu.html")
-      .then((response) => response.text())
-      .then((codigo) => {
-        document.querySelector("#menu").innerHTML = codigo;
-      })
-      .then(()=>{
-        if(sessionStorage.getItem('clave')){
-          
-          document.querySelector("#btnLogin").style.display = "none";
-          document.querySelector("#btnRegister").style.display = "none";
-          document.querySelector("#misReservas").style.display = 'inline';
-          document.querySelector("#LogOut").style.display = 'inline';
-          document.querySelector("#LogOut").addEventListener("click",()=>{sessionStorage.clear()})
-      }
-  })
- }
- cargarMenu();
-
 
 export const damePisos = () => {
-    
-    fetch("http://localhost:3000/pisos")
+
+  fetch("http://localhost:3000/pisos")
     .then(respuesta => respuesta.json())
     .then(datos => sacaPisos(datos))
-    .catch( error => {
-        M.toast({html: "No se puede obtener pisos.",classes:"red"});
+    .catch(error => {
+      M.toast({ html: "No se puede obtener pisos.", classes: "red" });
     });
-  
+
 }
 
-const dameCabañas = () => {
-    
+export const dameCabañas = () => {
+
   fetch("http://localhost:3000/cabanas")
-  .then(respuesta => respuesta.json())
-  .then(datos => sacaCabañas(datos))
-  .catch( error => {
-      M.toast({html: "No se puede obetener cabañas.",classes:"red"});
-  });
+    .then(respuesta => respuesta.json())
+    .then(datos => sacaCabañas(datos))
+    .catch(error => {
+      M.toast({ html: "No se puede obetener cabañas.", classes: "red" });
+    });
 }
-dameCabañas();
 
-const dameServicios = () => {
-    
+
+export const dameServicios = () => {
+
   fetch("http://localhost:3000/servicios")
-  .then(respuesta => respuesta.json())
-  .then(datos => sacaServicios(datos))
-  .catch( error => {
-      M.toast({html: "No se puede obetener cabañas.",classes:"red"});
-  });
+    .then(respuesta => respuesta.json())
+    .then(datos => sacaServicios(datos))
+    .catch(error => {
+      M.toast({ html: "No se puede obetener cabañas.", classes: "red" });
+    });
 }
-dameServicios();

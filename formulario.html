@@ -3,7 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link rel="stylesheet" href="css/login.css">
+      <link rel="stylesheet" href="css/home.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"
       media="screen,projection" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -12,45 +12,46 @@
   </head>
   <body>
    
+<div id="menu"></div>
 <div class="container" style="max-width: 650px; min-width: 400px;">
 
-    <h2 class="card-header text-center">Reserva</h2>
+    <h2 class="card-header orange-text text-center">Reserva</h2>
     <div class="card-body">
       <form id="myForm" onsubmit="return validar()">
         <div class="form-group">
-          <legend>Datos de la Cuenta</legend>
-          <label for="user">Usuario:</label>
+          <legend class="orange-text">Datos de la Cuenta</legend>
+          <label class="white-text" for="user">Usuario:</label>
           <input type="text" class="form-control" id="user" placeholder="Usuario" disabled>
-          <label for="email">Correo Electronico:</label>
+          <label class="white-text" for="email">Correo Electronico:</label>
         
           <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" disabled>
 
-          <label for="user">Tipo de Alojamiento:</label>
+          <label class="white-text" for="user">Tipo de Alojamiento:</label>
           <input type="text" class="form-control" id="Alojamiento" placeholder="Alojamiento" disabled>
-          <label for="user">Establecimiento: </label>
+          <label class="white-text" for="user">Establecimiento: </label>
           <input type="text" class="form-control" id="Establecimiento" placeholder="Establecimiento" disabled>
-          <label>Fecha Inicio</label>
+          <label class="white-text">Fecha Inicio</label>
           <input type="date" id="start" name="trip-start"
-          value="2018-07-22"
-          min="2018-01-01" max="2018-12-31">
+         
+          min="2021-01-01" max="2021-12-31">
 
-          <label>Fecha Fin</label>
+          <label class="white-text">Fecha Fin</label>
          
           <input type="date" id="end" name="trip-start"
-          value="2018-07-22"
-          min="2018-01-01" max="2018-12-31">
+         
+          min="2021-01-01" max="2021-12-31">
         </div>
 
-        <input type="submit" class="btn btn-success" id="boton" value="Confirmar">
+        <input type="button" class="btn btn-success" id="boton" value="Confirmar">
       
       </form>
     </div>
   </div>
 </div>
-
+<div id="footer" style="margin-top: 30px;"></div>
+<script type="module" src="/js/modulos/formulario.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
  
-  <script type="module" src="/js/modulos/formulario.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 
 </html>

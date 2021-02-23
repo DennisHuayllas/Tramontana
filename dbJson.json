@@ -60,113 +60,111 @@
   "cabanas": [
     {
       "id": 1,
-      "imagen":"img/C3.jpg",
+      "imagen": "img/C3.jpg",
       "nombre": "Waterside Cornwall",
       "poblacion": "Bodmin",
-      "precio":"39.99",
+      "precio": "39.99",
       "camas": 2,
-      "aseos":"compartidos"
+      "aseos": "compartidos"
     },
     {
       "id": 2,
-      "imagen":"img/C2.jpg",
+      "imagen": "img/C2.jpg",
       "nombre": "The Snuggery",
       "poblacion": "Truro",
-      "precio":"59.99",
+      "precio": "59.99",
       "camas": 3,
-      "aseos":"compartidos"
+      "aseos": "compartidos"
     },
     {
       "id": 3,
-      "imagen":"img/C1.jpg",
+      "imagen": "img/C1.jpg",
       "nombre": "The Old Deer House",
       "poblacion": "Cardinham",
-      "precio":"49.99",
+      "precio": "49.99",
       "camas": 4,
-      "aseos":"compartidos"
+      "aseos": "compartidos"
     },
     {
       "id": 4,
-      "imagen":"img/C4.jpg",
+      "imagen": "img/C4.jpg",
       "nombre": "The Bothy",
       "poblacion": "Cornwall",
-      "precio":"79.99",
+      "precio": "79.99",
       "camas": 2,
-      "aseos":"compartidos"
-    }
-    ,
+      "aseos": "compartidos"
+    },
     {
       "id": 5,
-      "imagen":"img/C5.jpg",
+      "imagen": "img/C5.jpg",
       "nombre": "Truly Paradise Cottage",
       "poblacion": "Golant",
-      "precio":"59.99",
+      "precio": "59.99",
       "camas": 2,
-      "aseos":"compartidos"
-    }
-    ,
+      "aseos": "compartidos"
+    },
     {
       "id": 6,
-      "imagen":"img/C6.jpg",
+      "imagen": "img/C6.jpg",
       "nombre": "Tregolls",
       "poblacion": "Wadebridge",
-      "precio":"89.99",
+      "precio": "89.99",
       "camas": 3,
-      "aseos":"compartidos"
+      "aseos": "compartidos"
     }
   ],
   "pisos": [
     {
       "id": 1,
-      "imagen":"img/1.jpg",
+      "imagen": "img/1.jpg",
       "poblacion": "Alicante",
       "habitaciones": 3,
       "aseos": 1,
       "exterior": true,
-      "precio":"49.99"
+      "precio": "49.99"
     },
     {
       "id": 2,
-      "imagen":"img/2.jpg",
+      "imagen": "img/2.jpg",
       "poblacion": "San Vicente",
       "habitaciones": 4,
       "aseos": 2,
-      "precio":"54.99",
+      "precio": "54.99",
       "exterior": false
     },
     {
       "id": 3,
-      "imagen":"img/3.jpg",
+      "imagen": "img/3.jpg",
       "poblacion": "San Juan",
       "habitaciones": 6,
       "aseos": 3,
-      "precio":"59.99",
+      "precio": "59.99",
       "exterior": true
     },
     {
       "id": 4,
-      "imagen":"img/4.jpg",
+      "imagen": "img/4.jpg",
       "poblacion": "Elxe",
       "habitaciones": 3,
-      "precio":"29.99€",
+      "precio": "29.99€",
       "aseos": 3,
       "exterior": false
     },
     {
       "id": 5,
-      "imagen":"img/5.jpg",
+      "imagen": "img/5.jpg",
       "poblacion": "Alicante",
       "habitaciones": 2,
       "aseos": 2,
-      "precio":"49.99",
+      "precio": "49.99",
       "exterior": true
     },
     {
       "id": 6,
-      "imagen":"img/6.jpg",
+      "imagen": "img/6.jpg",
       "poblacion": "Alicante",
       "habitaciones": 3,
-      "precio":"64.99",
+      "precio": "64.99",
       "aseos": 1,
       "exterior": true
     }
@@ -174,69 +172,48 @@
   "servicios": [
     {
       "id": 1,
-      "imagen":"img/s1.jpg",
+      "imagen": "img/s1.jpg",
       "tipo": "Desayuno",
-      "precio":"7.99 €/Persona",
-      "duracion":"sin limite"
+      "precio": "7.99 €/Persona",
+      "duracion": "sin limite"
     },
     {
       "id": 2,
-      "imagen":"img/s2.jpg",
+      "imagen": "img/s2.jpg",
       "tipo": "Masaje Balines",
-      "precio":"54.99 €/Hora",
-      "duracion":"1 hora"
+      "precio": "54.99 €/Hora",
+      "duracion": "1 hora"
     },
     {
       "id": 3,
-      "imagen":"img/s3.jpg",
+      "imagen": "img/s3.jpg",
       "tipo": "Senderismo-Guiado",
-      "precio":"14.99 €/Ruta",
-      "duracion":"4 horas"
+      "precio": "14.99 €/Ruta",
+      "duracion": "4 horas"
     },
     {
       "id": 4,
-      "imagen":"img/s4.jpg",
+      "imagen": "img/s4.jpg",
       "tipo": "Alquiler De Bicicletas",
-      "precio":"5.99 €/Dia",
-      "duracion":"sin limite"
+      "precio": "5.99 €/Dia",
+      "duracion": "sin limite"
     },
     {
       "id": 5,
-      "imagen":"img/s5.jpg",
+      "imagen": "img/s5.jpg",
       "tipo": "Yoga en la naturaleza",
-      "precio":"9.99 €/Persona",
-      "duracion":"sin limite"
+      "precio": "9.99 €/Persona",
+      "duracion": "sin limite"
     },
     {
       "id": 6,
-      "imagen":"img/s6.jpg",
+      "imagen": "img/s6.jpg",
       "tipo": "Tirolina",
-      "precio":"1.99 €/Salto",
-      "duracion":"sin limite"
-
+      "precio": "1.99 €/Salto",
+      "duracion": "sin limite"
     }
   ],
   "reservas": [
-    {
-      "id": 1,
-      "usuarioId": 1,
-      "pisoId": 1,
-      "dias": 12,
-      "mes": "Enero"
-    },
-    {
-      "id": 2,
-      "usuarioId": 1,
-      "pisoId": 3,
-      "dias": 5,
-      "mes": "Febrero"
-    },
-    {
-      "id": 3,
-      "usuarioId": 2,
-      "pisoId": 2,
-      "dias": 5,
-      "mes": "Febrero"
-    }
+    
   ]
 }
