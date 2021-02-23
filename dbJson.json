@@ -214,6 +214,14 @@
     }
   ],
   "reservas": [
-    
+    {
+      "usuarioId": "1",
+      "tipoAlojamiento": "pisos",
+      "fechaInicio": "2021-02-12",
+      "fechaFin": "2021-02-11",
+      "email": "sa@sa.es",
+      "idEstablecimiento": "1",
+      "id": 1
+    }
   ]
 }

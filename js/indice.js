@@ -47,7 +47,7 @@ if (inicioBoton !== null) {
 }
 
 // Página pisos, carga los datos de la BD.
-if (pagina.pathname == "/pisos") {
+if (pagina.pathname == "/pisos.html"||pagina.pathname == "/pisos") {
 
   damePisos()
   dameCabañas()
