@@ -104,7 +104,7 @@ const validadReserva = (reserva, object) => {
 
 
       fetch("http://localhost:3000/reservas/", options).then((response) =>
-        M.toast({ html: "dennis completada con éxito", classes: "teal" })
+        M.toast({ html: "Reserva completada con éxito", classes: "teal" })
       );
 
 
@@ -122,7 +122,7 @@ const validadReserva = (reserva, object) => {
 
     fetch("http://localhost:3000/reservas/", options)
       .then((response) =>
-        M.toast({ html: "trozoc de imerda", classes: "teal" })
+        M.toast({ html: "Reserva aceptada correctamente", classes: "teal" })
       )
       .then((data) => {
         /** Procesar los datos **/
