@@ -53,6 +53,7 @@ if (pagina.pathname == "/pisos.html"||pagina.pathname == "/pisos") {
   dameCabañas()
   dameServicios()
 
+  
 }
 
 // Página reservas, carga los datos de la BD.
@@ -61,8 +62,6 @@ if (pagina.pathname == "/reservas" || pagina.pathname == '/reservas.html') {
   if (sessionStorage.getItem('clave') != null) misReservas()
   else window.location = '/login'
 }
-
-
 // Alta usuario página signup
 if (altaUsuario !== null) {
   altaUsuario.addEventListener("submit", (e) => {

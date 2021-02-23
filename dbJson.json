@@ -292,6 +292,42 @@
       "email": "sa@sa.es",
       "idEstablecimiento": "1",
       "id": 1
+    },
+    {
+      "usuarioId": "1",
+      "tipoAlojamiento": "pisos",
+      "fechaInicio": "2021-02-18",
+      "fechaFin": "2021-02-27",
+      "email": "sa@sa.es",
+      "idEstablecimiento": "4",
+      "id": 2
+    },
+    {
+      "usuarioId": "1",
+      "tipoAlojamiento": "pisos",
+      "fechaInicio": "2021-02-15",
+      "fechaFin": "2021-03-19",
+      "email": "sa@sa.es",
+      "idEstablecimiento": "3",
+      "id": 3
+    },
+    {
+      "usuarioId": "1",
+      "tipoAlojamiento": "servicio",
+      "fechaInicio": "2021-02-04",
+      "fechaFin": "2021-02-05",
+      "email": "sa@sa.es",
+      "idEstablecimiento": "3",
+      "id": 4
+    },
+    {
+      "usuarioId": "1",
+      "tipoAlojamiento": "cabana",
+      "fechaInicio": "2021-02-10",
+      "fechaFin": "2021-02-12",
+      "email": "sa@sa.es",
+      "idEstablecimiento": "3",
+      "id": 5
     }
   ]
 }
