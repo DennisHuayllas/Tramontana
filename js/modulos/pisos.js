@@ -1,6 +1,6 @@
 export const muestraPisos = (piso, reserva) => {
   let addPisos = document.querySelector("#pisos");
-
+  const btn=document.querySelectorAll("#alquilar");
   let salida = `
               <div id="hola" class="col s12 m4 xl4 ">
                 <div class="card">
@@ -16,10 +16,17 @@ export const muestraPisos = (piso, reserva) => {
                         <br>
                         <p id="nombre"class="card-title">${piso.precio}€/Noche</p>
                     </ul>`;
-
+ 
+  if(!sessionStorage.getItem("clave")){
+  
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
   if (reserva) {
 
-    salida += `<div class="chip white">
+    salida += `<div class="chip teal"
+    ">
                 Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
               </div>`;
   }
@@ -35,7 +42,7 @@ export const muestraPisos = (piso, reserva) => {
 }
 export const muestraCabañas = (cabana, reserva) => {
   let addCabanas = document.querySelector("#cabanas")
-
+  const btn=document.querySelectorAll("#alquilar");
   let salida = `
             <div id="hola" class="col s12 m4 xl4 ">
               <div class="card">
@@ -51,6 +58,13 @@ export const muestraCabañas = (cabana, reserva) => {
                       <br>
                       <p id="nombre"class="card-title">${cabana.precio}€/Noche</p>
                   </ul>`;
+
+  if(!sessionStorage.getItem("clave")){
+  
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
   if (reserva) {
 
     salida += `<div class="chip white">
@@ -70,7 +84,7 @@ export const muestraCabañas = (cabana, reserva) => {
 
 export const muestraServicios = (servicio, reserva) => {
   let addServicio = document.querySelector("#servicios");
-
+  const btn=document.querySelectorAll("#alquilar");
   let salida = `
             <div id="hola" class="col s12 m4 xl4 ">
               <div class="card">
@@ -84,6 +98,13 @@ export const muestraServicios = (servicio, reserva) => {
                       <br>
                       <p id="nombre"class="card-title">${servicio.precio}</p>
                   </ul>`;
+ 
+  if(!sessionStorage.getItem("clave")){
+  
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
   if (reserva) {
 
 
