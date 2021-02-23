@@ -1,8 +1,7 @@
 export const muestraPisos = (piso, reserva) => {
   let addPisos = document.querySelector("#pisos");
-  const btn=document.querySelectorAll("#alquilar");
   let salida = `
-              <div id="hola" class="col s12 m4 xl4 ">
+              <div id="hola" class="col s12 m4 xl4">
                 <div class="card">
                   <div class="card-image">
                     <img src="${piso.imagen}">  
@@ -16,18 +15,12 @@ export const muestraPisos = (piso, reserva) => {
                         <br>
                         <p id="nombre"class="card-title">${piso.precio}€/Noche</p>
                     </ul>`;
- 
-  if(!sessionStorage.getItem("clave")){
-  
-    for(let i=0;i<btn.length;i++){
-      btn[i].style.display="none";
-    }
-  }
-  if (reserva) {
 
+  if (reserva) {
+    
     salida += `<div class="chip teal"
     ">
-                Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
+              Reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
               </div>`;
   }
   salida += `</div>
@@ -39,10 +32,22 @@ export const muestraPisos = (piso, reserva) => {
 
   addPisos.appendChild(e);
 
+  const btn=document.querySelectorAll("#alquilar");
+  if(reserva){
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
+  if(!sessionStorage.getItem("clave")){
+  
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
+ 
 }
 export const muestraCabañas = (cabana, reserva) => {
   let addCabanas = document.querySelector("#cabanas")
-  const btn=document.querySelectorAll("#alquilar");
   let salida = `
             <div id="hola" class="col s12 m4 xl4 ">
               <div class="card">
@@ -59,16 +64,10 @@ export const muestraCabañas = (cabana, reserva) => {
                       <p id="nombre"class="card-title">${cabana.precio}€/Noche</p>
                   </ul>`;
 
-  if(!sessionStorage.getItem("clave")){
-  
-    for(let i=0;i<btn.length;i++){
-      btn[i].style.display="none";
-    }
-  }
   if (reserva) {
-
-    salida += `<div class="chip white">
-              Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
+    document.querySelector("#alquilar").style.display="none";
+    salida += `<div class="chip teal">
+             Reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
             </div>`;
   }
   salida += `</div>
@@ -79,12 +78,22 @@ export const muestraCabañas = (cabana, reserva) => {
   e.innerHTML = salida;
 
   addCabanas.appendChild(e);
-
+  const btn=document.querySelectorAll("#alquilar");
+  if(reserva){
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
+  if(!sessionStorage.getItem("clave")){
+  
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
 }
 
 export const muestraServicios = (servicio, reserva) => {
-  let addServicio = document.querySelector("#servicios");
-  const btn=document.querySelectorAll("#alquilar");
+  let addServicio = document.querySelector("#servicios"); 
   let salida = `
             <div id="hola" class="col s12 m4 xl4 ">
               <div class="card">
@@ -98,18 +107,12 @@ export const muestraServicios = (servicio, reserva) => {
                       <br>
                       <p id="nombre"class="card-title">${servicio.precio}</p>
                   </ul>`;
- 
-  if(!sessionStorage.getItem("clave")){
-  
-    for(let i=0;i<btn.length;i++){
-      btn[i].style.display="none";
-    }
-  }
+
   if (reserva) {
 
-
-    salida += `<div class="chip white">
-              Ha sido reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
+    ocultarCarrito();
+    salida += `<div class="chip teal">
+             Reservado del  ${reserva.fechaInicio} al ${reserva.fechaFin}
             </div>`;
   }
   salida += `</div>
@@ -120,7 +123,19 @@ export const muestraServicios = (servicio, reserva) => {
   e.innerHTML = salida;
 
   addServicio.appendChild(e);
-
+  const btn=document.querySelectorAll("#alquilar");
+  if(reserva){
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
+  if(!sessionStorage.getItem("clave")){
+  
+    for(let i=0;i<btn.length;i++){
+      btn[i].style.display="none";
+    }
+  }
+ 
 }
 const sacaPisos = (pisos) => {
   pisos.forEach((dato) => muestraPisos(dato));
@@ -163,3 +178,7 @@ export const dameServicios = () => {
       M.toast({ html: "No se puede obetener cabañas.", classes: "red" });
     });
 }
+const ocultarCarrito=()=>{
+  
+}
+
